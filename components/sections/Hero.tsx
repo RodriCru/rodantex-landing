@@ -1,5 +1,5 @@
 import { Reveal } from "../ui/Reveal";
-import { HeroPanel } from "../ui/HeroPanel";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -33,7 +33,27 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <Reveal><HeroPanel /></Reveal>
+        <Reveal>
+          <div className="relative pb-10 pr-6 lg:pr-0">
+            <Image
+              src="/images/dashboard.webp"
+              alt="Panel de Rodantex con vehículos activos, gasto en llantas y mantenimientos de la flota"
+              width={1600}
+              height={772}
+              priority
+              sizes="(min-width: 1024px) 520px, 100vw"
+              className="w-full h-auto rounded-2xl border border-border shadow-lg"
+            />
+            <Image
+              src="/images/dashboard-movil.webp"
+              alt="Rodantex en el celular: resumen de la flota"
+              width={640}
+              height={1128}
+              sizes="140px"
+              className="absolute bottom-0 right-0 w-[26%] h-auto rounded-xl border border-border shadow-lg"
+            />
+          </div>
+        </Reveal>
       </div>
     </section>
   );

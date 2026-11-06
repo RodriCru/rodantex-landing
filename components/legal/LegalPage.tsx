@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { Logo } from "@/components/ui/Logo";
 import { LEGAL_UPDATED } from "@/lib/site";
@@ -7,8 +8,8 @@ export function LegalPage({ title, children }: { title: string; children: React.
     <>
       <header className="bg-white border-b border-black/5">
         <div className="max-w-[820px] mx-auto px-6 py-3 flex items-center justify-between">
-          <a href="/" aria-label="Rodantex inicio"><Logo /></a>
-          <a href="/" className="text-sm font-semibold text-primary hover:underline">Volver al inicio</a>
+          <Link href="/" aria-label="Rodantex inicio"><Logo /></Link>
+          <Link href="/" className="text-sm font-semibold text-primary hover:underline">Volver al inicio</Link>
         </div>
       </header>
       <main className="max-w-[820px] mx-auto px-6 py-14">

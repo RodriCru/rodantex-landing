@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { FleetGallery } from "@/components/sections/FleetGallery";
 import { Features } from "@/components/sections/Features";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -17,6 +18,7 @@ const jsonLd = [
     "@type": "Organization",
     name: SITE_NAME,
     url: SITE_URL,
+    logo: `${SITE_URL}/images/logo-512.png`,
     areaServed: "MX",
     availableLanguage: "es",
   },
@@ -55,6 +57,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <FleetGallery />
         <Features />
         <HowItWorks />
         <Testimonials />
