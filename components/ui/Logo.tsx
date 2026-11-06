@@ -2,7 +2,7 @@
 export function Logo({ variant = "light" }: { variant?: "light" | "dark" }) {
   const wordmark = variant === "light" ? "#264653" : "#F3F5F6";
   return (
-    <svg viewBox="0 0 290 100" role="img" aria-label="Rodantex" className="h-11 w-auto">
+    <svg viewBox="0 0 340 100" role="img" aria-label="Rodantex" className="h-11 w-auto">
       <rect width="100" height="100" rx="21" fill="#0F4C5C" />
       <rect x="20" y="20" width="25" height="25" rx="6" fill="#2A9D8F" />
       <rect x="55" y="20" width="25" height="25" rx="6" fill="#2A9D8F" />
