@@ -1,26 +1,48 @@
 @import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Estructura */
+  --color-primary: #17232F;
+  --color-primary-hover: #0F1922;
+  --color-primary-light: #293B4B;
+  /* Acción */
+  --color-secondary: #B8D957;
+  --color-secondary-hover: #A6C644;
+  --color-secondary-light: #D4E894;
+  /* Info */
+  --color-info: #2A9D8F;
+  --color-info-dark: #0F4C5C;
+  /* Advertencia */
+  --color-accent: #E9A23B;
+  /* Crítico */
+  --color-danger: #E76F51;
+  /* Superficies */
+  --bg-app: #F3F5F6;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #E7EBEE;
+  --border: #D2D8DD;
+  /* Texto */
+  --text-primary: #17232F;
+  --text-secondary: #4A5A6B;
+  --text-muted: #8795A3;
+  --text-inverse: #FFFFFF;
+
+  /* Estados operativos */
+  --status-active-bg: #E8F2C6;     --status-active-fg: #3D5210;
+  --status-available-bg: #D9F2EE;  --status-available-fg: #0F4C5C;
+  --status-maint-bg: #FBEED4;      --status-maint-fg: #7A4E0F;
+  --status-incident-bg: #FBE3DC;   --status-incident-fg: #8A2E1A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-app);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Animación reveal (la que tenías en el <script>) */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
