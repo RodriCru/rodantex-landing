@@ -2,18 +2,18 @@ import { Logo } from "../ui/Logo";
 
 const cols = [
   { title: "Producto", links: [
-    { href: "#features", label: "Funciones" },
-    { href: "#como-funciona", label: "Cómo funciona" },
-    { href: "#precios", label: "Precios" },
+    { href: "/#features", label: "Funciones" },
+    { href: "/#como-funciona", label: "Cómo funciona" },
+    { href: "/#precios", label: "Precios" },
   ] },
   { title: "Empresa", links: [
-    { href: "#testimonios", label: "Testimonios" },
-    { href: "#faq", label: "Preguntas frecuentes" },
-    { href: "#cta", label: "Contacto" },
+    { href: "/#testimonios", label: "Testimonios" },
+    { href: "/#faq", label: "Preguntas frecuentes" },
+    { href: "/#cta", label: "Contacto" },
   ] },
   { title: "Legal", links: [
-    { href: "#", label: "Aviso de privacidad" },
-    { href: "#", label: "Términos de uso" },
+    { href: "/privacidad", label: "Aviso de privacidad" },
+    { href: "/terminos", label: "Términos de uso" },
   ] },
 ];
 
@@ -26,7 +26,7 @@ export async function Footer() {
           <div>
             <Logo variant="dark" />
             <p className="text-sm text-info-light mt-3.5 max-w-[300px] leading-relaxed">
-              Software de gestión de flotas para transporte escolar, público y privado...
+              Software de gestión de flotas para transporte escolar, público y privado, administra y lleva todo en la palma de tu mano.
             </p>
           </div>
           {cols.map((c) => (
