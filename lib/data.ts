@@ -20,9 +20,7 @@ export const testimonials = [
 ];
 
 export const plans = [
-  { name: "Básico", price: "$800", period: "/mes", desc: "Ideal para flotas pequeñas o medianas", features: ["Hasta 20 unidades", "Control de llantas y mantenimiento", "Alertas básicas", "Soporte por correo"], cta: "Comenzar", featured: false },
-  { name: "Profesional", price: "$1300", period: "/mes", desc: "Para flotas en operación diaria", features: ["Hasta 70 unidades", "Todo lo del plan Básico", "Documentos y vencimientos", "Reportes y costos por unidad", "Soporte prioritario"], cta: "Solicitar demo", featured: true },
-  { name: "Empresa", price: "A medida", period: "", desc: "Para flotas grandes, con operacion nacional", features: ["Unidades ilimitadas", "Todo lo del plan Profesional", "Capacitación al equipo", "Ejecutivo de cuenta"], cta: "Contactar", featured: false },
+  { name: "Empresa", price: "$70", period: "unidad/mes", desc: "Ideal para todo tipo de flotas", features: ["Registra desde una unidad.", "Control de llantas y mantenimiento", "Alertas básicas", "Soporte por correo", "Paga solo por las unidades activas que tengas"], cta: "Comenzar", featured: true},
 ];
 
 export const faqs = [
