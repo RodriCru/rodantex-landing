@@ -30,8 +30,8 @@ export function Header() {
               {l.label}
             </a>
           ))}
-          <a href="#cta" className="bg-lime hover:bg-lime-hover text-primary font-bold text-sm px-5 py-2.5 rounded-[10px] text-center">
-            Agendar demo
+          <a href="#precios" className="bg-lime hover:bg-lime-hover text-primary font-bold text-sm px-5 py-2.5 rounded-[10px] text-center">
+            Cotizar mi flota
           </a>
         </nav>
       </div>

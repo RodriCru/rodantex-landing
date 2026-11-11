@@ -4,9 +4,6 @@ import type { FormEvent } from "react";
 import { Reveal } from "../ui/Reveal";
 import { plans } from "@/lib/data";
 
-// TODO: Reemplazar por el número de WhatsApp real cuando esté disponible
-const WHATSAPP_NUMBER = "5210000000000"; // Con código de país, sin + ni espacios
-
 const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   const data = new FormData(e.currentTarget);
@@ -27,8 +24,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     `Notas: ${notas || "—"}`,
   ].join("\n");
 
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
-  window.open(url, "_blank");
+  window.location.href = `mailto:contacto@rodantex.com?subject=Solicitud%20de%20cotización&body=${encodeURIComponent(mensaje)}`;
 };
 
 export function Pricing() {
@@ -156,7 +152,7 @@ export function Pricing() {
             type="submit"
             className="bg-lime hover:bg-lime-hover text-primary font-bold px-5 py-3 rounded-[10px] transition"
           >
-            Enviar por WhatsApp
+            Solicitar cotización
           </button>
 
           <p className="text-xs text-ink-muted text-center">

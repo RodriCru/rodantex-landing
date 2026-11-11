@@ -40,6 +40,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg-app);
   color: var(--text-primary);
+  font-family: Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

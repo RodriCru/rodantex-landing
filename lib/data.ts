@@ -1,16 +1,16 @@
 export const features = [
   { icon: "tire", title: "Control de llantas", desc: "Registra el desgaste, rotaciones y reemplazos por unidad, y cuida tu negocio." },
-  { icon: "wrench", title: "Mantenimiento programado", desc: "Calendario por kilometraje o fecha." },
+  { icon: "wrench", title: "Mantenimiento programado", desc: "Registra servicios, fechas, odómetro y proveedores para no perder el siguiente mantenimiento." },
   { icon: "chart", title: "Reportes y costos", desc: "Consulta gastos por unidad, rendimiento y costos operativos, y administra mejor tu negocio." },
-  { icon: "shield", title: "Documentos al día", desc: "Pólizas, licencias, verificaciones y permisos en un solo lugar sin consultar externos." },
-  { icon: "users", title: "Operadores y unidades", desc: "Administra choferes, unidades y asignaciones, que no se te escape nada ni nadie." },
+  { icon: "shield", title: "Documentos al día", desc: "Consulta pólizas, verificaciones y datos de cada unidad desde una misma ficha." },
+  { icon: "users", title: "Operadores y unidades", desc: "Mantén ordenada la información de tus unidades y las personas que las operan." },
   { icon: "chat", title: "Soporte cercano", desc: "Acompañamiento en la implementación y soporte en español en todo momento." },
 ];
 
 export const steps = [
-  { n: 1, title: "Registra tu flota", desc: "Da de alta tus unidades, operadores y provedores." },
-  { n: 2, title: "Configura alertas", desc: "Define mantenimientos por kilometraje, fechas o imprevistos." },
-  { n: 3, title: "Opera con control", desc: "Recibe avisos, revisa reportes y mantén tu flota al día, en un mismo lugar" },
+  { n: 1, title: "Registra tu flota", desc: "Da de alta tus unidades, operadores y proveedores en una sola plataforma." },
+  { n: 2, title: "Registra lo que ocurre", desc: "Documenta inspecciones, mantenimientos, documentos y recorridos mientras operas." },
+  { n: 3, title: "Decide a tiempo", desc: "Consulta pendientes y el historial de cada unidad para actuar antes de una parada." },
 ];
 
 export const testimonials = [
